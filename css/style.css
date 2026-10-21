@@ -1,1 +1,105 @@
+* {
+    box-sizing: border-box;
+}
 
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+header {
+    background: #444;
+    color: white;
+    margin: 15px 6%;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 18px;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+main {
+    width: 88%;
+    margin: auto;
+}
+
+.hero {
+    display: grid;
+    gap: 20px;
+}
+
+.hero > div {
+    background: #d9d9d9;
+    padding: 25px;
+    text-align: center;
+}
+
+.hero p {
+    font-size: 13px;
+}
+
+button {
+    background: #222;
+    color: white;
+    border: 0;
+    padding: 10px 15px;
+    margin-top: 20px;
+}
+
+.cards {
+    display: grid;
+    gap: 35px;
+    margin: 25px 5px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.image {
+    height: 180px;
+    background: #d9d9d9;
+}
+
+article button {
+    margin-top: auto;
+    align-self: center;
+}
+
+footer {
+    background: #e5e5e5;
+    padding: 15px 7%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a {
+    margin-left: 10px;
+}
+
+@media (min-width: 768px) {
+
+    .hero {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .cards {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+}
